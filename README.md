@@ -48,3 +48,12 @@ brew install ripgrep
 #### navigating between neovim windows and tmux
 
 - [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+
+#### fuzzy finder
+
+- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy Finder
+
+
+#### marking files with harpoon
+
+- [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon)

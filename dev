@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Symlink nvim config
-ln -sf $(pwd)/.config/nvim ~/.config/nvim
+ln -sf $(pwd)/config/nvim ~/.config/nvim
 
 # Symlink tmux config
 ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
