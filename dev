@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Symlink nvim config
+ln -sf $(pwd)/.config/nvim ~/.config/nvim
+
+# Symlink tmux config
+ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
+
+# Symlink zsh config
+ln -sf $(pwd)/zsh/.zshrc ~/.zshrc

@@ -1,3 +1,6 @@
+local discipline = require("abereghici.utils.discipline")
+discipline.cowboy()
+
 -- set <space> as the leader key
 -- note: must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
