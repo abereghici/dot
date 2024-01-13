@@ -1,6 +1,3 @@
-local discipline = require("abereghici.utils.discipline")
-discipline.cowboy()
-
 local keymap = vim.keymap -- for conciseness
 
 -- set <space> as the leader key
