@@ -1,2 +1,2 @@
-require("abereghici.core")
-require("abereghici.lazy")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
