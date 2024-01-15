@@ -41,6 +41,10 @@ brew install ripgrep
 
 - [folke/lazy.nvim](https://github.com/folke/lazy.nvim) - amazing plugin manager
 
+#### dependency for other plugins
+
+- [nvim-lua/plenary](https://github.com/nvim-lua/plenary.nvim) - Useful lua functions other plugins use
+
 #### preferred colorscheme
 
 - [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
@@ -57,3 +61,9 @@ brew install ripgrep
 #### marking files with harpoon
 
 - [ThePrimeagen/harpoon](https://github.com/ThePrimeagen/harpoon)
+
+#### Treesitter Syntax Highlighting, Autoclosing
+
+- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configuration
+- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Autoclose tags
+
