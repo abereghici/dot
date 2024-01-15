@@ -12,5 +12,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    { import = "abereghici.plugins" }
-})
+  { import = "abereghici.plugins" },
+  { import = "abereghici.plugins.lsp" }
+},{
+    checker = {
+      enabled = true,
+      notify = false,
+    },
+    change_detection = {
+      notify = false,
+    }
+  })

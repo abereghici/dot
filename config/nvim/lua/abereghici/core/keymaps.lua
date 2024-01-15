@@ -7,8 +7,6 @@ vim.g.maplocalleader = ' '
 
 keymap.set("i", "<C-c>", "<Esc>", { desc = "Exit insert mode with ctrl+c" })
 
-keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open explorer" })
-
 keymap.set("v", "K", ":m '>-2<CR>gv=gv", { desc = "Move visual selection up" })
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move visual selection down" })
 
