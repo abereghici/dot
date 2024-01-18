@@ -124,7 +124,7 @@ export HOMEBREW_NO_AUTO_UPDATE HOMEBREW_NO_ANALYTICS
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 # PATH alterations
-export PATH="/usr/local/bin:$PATH:./node_modules/.bin"
+export PATH="/usr/local/bin:$PATH:./node_modules/.bin:$HOME/.local/bin"
 
 # fnm env
 eval "$(fnm env --use-on-cd)"
