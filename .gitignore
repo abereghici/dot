@@ -9,3 +9,5 @@ foo.*
 data
 
 config/tmux/plugins
+config/nvim/nvim
+config/tmux/tmux
