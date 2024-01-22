@@ -1,4 +1,3 @@
-config/tmux/plugins/
 DS_Store
 tt.*
 .tests
@@ -8,3 +7,5 @@ debug
 foo.*
 *.log
 data
+
+config/tmux/plugins
