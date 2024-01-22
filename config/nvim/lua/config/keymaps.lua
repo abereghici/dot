@@ -53,3 +53,14 @@ keymap.set("n", "<C-w><left>", "<C-w><")
 keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
+
+-- Move visual selections
+keymap.set("v", "K", ":m '>-2<CR>gv=gv", { desc = "Move visual selection up" })
+keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move visual selection down" })
+
+-- Keep cursor centered
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center the cursor" })
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll down and center the cursor" })
+
+keymap.set("n", "n", "nzzzv", { desc = "Keep search matches in window center" })
+keymap.set("n", "N", "Nzzzv", { desc = "Keep search matches in window center" })
