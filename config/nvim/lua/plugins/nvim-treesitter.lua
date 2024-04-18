@@ -7,6 +7,7 @@ return {
         "gitignore",
         "graphql",
         "http",
+        "lua",
       },
     },
     config = function(_, opts)
