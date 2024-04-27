@@ -6,6 +6,8 @@ discipline.cowboy()
 vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv", { desc = "Move visual selection up" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move visual selection down" })
 
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy the word to clipboard" })
+vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy the line to clipboard" })
 vim.keymap.set(
   "n",
   "<leader>cR",
