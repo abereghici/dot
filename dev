@@ -5,6 +5,3 @@ ln -sf $(pwd)/config/nvim ~/.config/nvim
 
 # Symlink tmux config
 ln -sf $(pwd)/config/tmux ~/.config/tmux
-
-# Symlink zsh config
-ln -sf $(pwd)/zsh/zshrc ~/.zshrc
