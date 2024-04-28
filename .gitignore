@@ -8,6 +8,6 @@ foo.*
 *.log
 data
 
-config/tmux/plugins
-config/nvim/nvim
-config/tmux/tmux
+.config/tmux/plugins
+.config/nvim/nvim
+.config/tmux/tmux
