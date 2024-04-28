@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Set the system locale to US English and character encoding to UTF-8 for all categories
 export LC_ALL="en_US.UTF-8"
 

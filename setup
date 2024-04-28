@@ -19,3 +19,6 @@ create_symlink "${current_dir}/config/tmux" "${HOME}/.config/tmux"
 
 # Symlink zsh config
 create_symlink "${current_dir}/config/zsh" "${HOME}/.config/zsh"
+
+# Symlink starship config
+create_symlink "${current_dir}/config/starship/starship.toml" "${HOME}/.config/starship.toml"
