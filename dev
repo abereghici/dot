@@ -12,10 +12,10 @@ create_symlink() {
 current_dir=$(pwd)
 
 # Symlink nvim config
-create_symlink "${current_dir}/.config/nvim" "${HOME}/.config/nvim"
+create_symlink "${current_dir}/config/nvim" "${HOME}/.config/nvim"
 
 # Symlink tmux config
-create_symlink "${current_dir}/.config/tmux" "${HOME}/.config/tmux"
+create_symlink "${current_dir}/config/tmux" "${HOME}/.config/tmux"
 
 # Symlink zsh config
-create_symlink "${current_dir}/.config/zsh" "${HOME}/.config/zsh"
+create_symlink "${current_dir}/config/zsh" "${HOME}/.config/zsh"
