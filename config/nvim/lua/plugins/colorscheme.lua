@@ -1,5 +1,6 @@
 local function getVariantByTime(hour)
-  if hour >= 9 and hour < 19 then
+  -- Calculate in UTC
+  if hour >= 6 and hour < 16 then
     return "dawn"
   else
     return "moon"
@@ -7,7 +8,7 @@ local function getVariantByTime(hour)
 end
 
 local function selectOptsByTime()
-  local hour = tonumber(os.date("%H"))
+  local hour = tonumber(os.date("!%H"))
   local variant = getVariantByTime(hour)
 
   return {
