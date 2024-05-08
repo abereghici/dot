@@ -11,6 +11,22 @@ create_symlink() {
 # Get the current working directory
 current_dir=$(pwd)
 
+# Recursively find all files in the local/bin directory and create symbolic links in the ~/.local/bin directory
+source_bin_dir="${current_dir}/local/bin"
+target_bin_dir="${HOME}/.local/bin"
+
+# Create the target directory if it doesn't exist
+mkdir -p "$target_bin_dir"
+
+# Find all files in the source directory
+find "$source_bin_dir" -type f -print0 | while IFS= read -r -d '' file; do
+	# Get the file name
+	file_name=$(basename "$file")
+
+	# Create a symbolic link in the target directory
+	create_symlink "$file" "${target_bin_dir}/${file_name}"
+done
+
 # Symlink nvim config
 create_symlink "${current_dir}/config/nvim" "${HOME}/.config/nvim"
 
