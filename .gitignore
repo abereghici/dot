@@ -11,3 +11,4 @@ data
 config/tmux/plugins
 config/nvim/nvim
 config/tmux/tmux
+config/zsh/zsh
