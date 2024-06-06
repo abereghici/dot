@@ -1,26 +1,11 @@
-local function getVariantByTime(hour)
-  -- Calculate in UTC
-  if hour >= 6 and hour < 16 then
-    return "dawn"
-  else
-    return "moon"
-  end
-end
-
-local function selectOptsByTime()
-  local hour = tonumber(os.date("!%H"))
-  local variant = getVariantByTime(hour)
-
-  return {
-    variant = variant,
-  }
-end
-
 return {
   {
     "rose-pine/neovim",
     name = "rose-pine",
-    opts = selectOptsByTime(),
+    opts = {
+      variant = "auto",
+      dark_variant = "moon",
+    },
   },
   {
     "LazyVim/LazyVim",
