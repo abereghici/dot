@@ -13,6 +13,12 @@ return {
         telescope = true,
         diffview = true,
       },
+      signs = {
+        -- { CLOSED, OPENED }
+        hunk = { "", "" },
+        item = { "▷", "▽" },
+        section = { "▷", "▽" },
+      },
     },
     keys = {
       {
