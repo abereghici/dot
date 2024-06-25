@@ -8,6 +8,12 @@ return {
     },
     event = "VeryLazy",
     config = true,
+    opts = {
+      integrations = {
+        telescope = true,
+        diffview = true,
+      },
+    },
     keys = {
       {
         "<leader>gn",
