@@ -41,3 +41,6 @@ create_symlink "${current_dir}/config/starship/starship.toml" "${HOME}/.config/s
 
 # Symlink alacritty config
 create_symlink "${current_dir}/config/alacritty" "${HOME}/.config/alacritty"
+
+# Symlink zellij config
+create_symlink "${current_dir}/config/zellij" "${HOME}/.config/zellij"
