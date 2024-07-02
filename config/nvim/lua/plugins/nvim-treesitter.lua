@@ -4,7 +4,7 @@ return {
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
 
-      vim.list_extend(opts.ensure_installed, { "css", "rust", "graphql", "gitignore" })
+      vim.list_extend(opts.ensure_installed, { "css", "rust", "graphql", "gitignore", "kdl" })
 
       -- MDX
       vim.filetype.add({
