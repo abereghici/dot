@@ -3,16 +3,14 @@
 local discipline = require("bereghicidev.discipline")
 discipline.cowboy()
 
-vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv", { desc = "Move visual selection up" })
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move visual selection down" })
+-- Move lines remap
+vim.keymap.set("n", "<C-k>", "<A-k>", { remap = true })
+vim.keymap.set("n", "<C-j>", "<A-j>", { remap = true })
 
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy the word to clipboard" })
-vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy the line to clipboard" })
-vim.keymap.set(
-  "n",
-  "<leader>cR",
-  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-  { desc = "Replace under cursor" }
-)
+vim.keymap.set("v", "<C-k>", "<A-k>", { remap = true })
+vim.keymap.set("v", "<C-j>", "<A-j>", { remap = true })
+
+vim.keymap.set("i", "<C-k>", "<A-k>", { remap = true })
+vim.keymap.set("i", "<C-j>", "<A-j>", { remap = true })
 
 vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines (cursor stationary)" })
