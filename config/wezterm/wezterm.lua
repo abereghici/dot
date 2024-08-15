@@ -13,7 +13,7 @@ config.window_frame = theme.window_frame()
 config.colors = theme.colors()
 
 config.font = wezterm.font({
-	family = "MesloLGS NF",
+	family = "MesloLGS Nerd Font",
 	weight = "Medium",
 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
 })
