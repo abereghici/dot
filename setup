@@ -39,8 +39,14 @@ create_symlink "${current_dir}/config/zsh" "${HOME}/.config/zsh"
 # Symlink starship config
 create_symlink "${current_dir}/config/starship/starship.toml" "${HOME}/.config/starship.toml"
 
+# Symlink aerospace config
+create_symlink "${current_dir}/config/aerospace" "${HOME}/.config/aerospace"
+
 # Symlink alacritty config
 create_symlink "${current_dir}/config/alacritty" "${HOME}/.config/alacritty"
+
+# Symlink wezterm config
+create_symlink "${current_dir}/config/wezterm" "${HOME}/.config/wezterm"
 
 # Symlink zellij config
 create_symlink "${current_dir}/config/zellij" "${HOME}/.config/zellij"
