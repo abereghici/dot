@@ -33,14 +33,30 @@ return {
         },
       })
 
-      vim.keymap.set(
-        "n",
-        "<leader>sf",
-        require("telescope").extensions.live_grep_args.live_grep_args,
-        { noremap = true, desc = "Grep (filter) with args" }
-      )
+      local live_grep_args = telescope.extensions.live_grep_args.live_grep_args
+
+      local function search_files()
+        live_grep_args()
+      end
+
+      local function search_tests()
+        live_grep_args({
+          additional_args = { "-ig", "*.test.*" },
+        })
+      end
+
+      local function search_storybooks()
+        live_grep_args({
+          additional_args = { "-ig", "*.story.*" },
+        })
+      end
+
+      vim.keymap.set("n", "<leader>sff", search_files, { noremap = true, desc = "Filter with args" })
+      vim.keymap.set("n", "<leader>sft", search_tests, { noremap = true, desc = "Tests" })
+      vim.keymap.set("n", "<leader>sfs", search_storybooks, { noremap = true, desc = "Storybooks" })
     end,
     keys = {
+      { "<leader>sf", "", desc = "+Filters", mode = { "n", "v" } },
       { "<leader><space>", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
       { "<leader>/", LazyVim.pick("live_grep", { root = false }), desc = "Grep (cwd)" },
     },
