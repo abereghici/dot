@@ -51,9 +51,23 @@ return {
         })
       end
 
+      local function search_gql()
+        live_grep_args({
+          additional_args = { "-ig", "*.gql*" },
+        })
+      end
+
+      local function search_css()
+        live_grep_args({
+          additional_args = { "-ig", "*.css" },
+        })
+      end
+
       vim.keymap.set("n", "<leader>sff", search_files, { noremap = true, desc = "Filter with args" })
       vim.keymap.set("n", "<leader>sft", search_tests, { noremap = true, desc = "Tests" })
       vim.keymap.set("n", "<leader>sfs", search_storybooks, { noremap = true, desc = "Storybooks" })
+      vim.keymap.set("n", "<leader>sfg", search_gql, { noremap = true, desc = "Graphql" })
+      vim.keymap.set("n", "<leader>sfc", search_css, { noremap = true, desc = "CSS" })
     end,
     keys = {
       { "<leader>sf", "", desc = "+Filters", mode = { "n", "v" } },
