@@ -53,13 +53,13 @@ return {
 
       local function search_gql()
         live_grep_args({
-          additional_args = { "-ig", "*.gql*" },
+          additional_args = { "-tgraphql" },
         })
       end
 
       local function search_css()
         live_grep_args({
-          additional_args = { "-ig", "*.css" },
+          additional_args = { "-tcss" },
         })
       end
 
