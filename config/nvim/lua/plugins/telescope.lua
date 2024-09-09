@@ -53,7 +53,7 @@ return {
 
       local function search_gql()
         live_grep_args({
-          additional_args = { "-tgraphql" },
+          additional_args = { "-ig", "*.gql" },
         })
       end
 
