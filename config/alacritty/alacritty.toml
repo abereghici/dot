@@ -1,4 +1,3 @@
-import = ["~/.config/alacritty/themes/rose-pine-moon.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -14,3 +13,14 @@ blur = true
 [font]
 normal.family = "MesloLGS Nerd Font"
 size = 16
+
+
+[general]
+import = ["~/.config/alacritty/themes/rose-pine-moon.toml"]
+
+[keyboard]
+bindings = [
+  { key = "B", mods = "Control", chars = "\u001BB" }, # Ctrl + B (Move backward one word)
+  { key = "F", mods = "Control", chars = "\u001BF" }, # Ctrl + F (Move forward one word)
+  { key = "D", mods = "Control", chars = "\u001BD" }, # Ctrl + D (Delete the word after the cursor)
+]
