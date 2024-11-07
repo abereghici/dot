@@ -1,6 +1,13 @@
+[general]
+live_config_reload = true
+import = ["~/.config/alacritty/themes/rose-pine-moon.toml"]
 
-[env]
-TERM = "xterm-256color"
+[terminal.shell]
+program = "/bin/zsh"
+args = [
+  "-c",
+  "/opt/homebrew/bin/zellij attach --index 0 || /opt/homebrew/bin/zellij",
+]
 
 [window]
 padding = { x = 10, y = 10 }
@@ -11,16 +18,27 @@ opacity = 0.75
 blur = true
 
 [font]
-normal.family = "MesloLGS Nerd Font"
 size = 16
 
+[font.bold]
+family = "MesloLGS Nerd Font"
+style = "Bold"
 
-[general]
-import = ["~/.config/alacritty/themes/rose-pine-moon.toml"]
+[font.bold_italic]
+family = "MesloLGS Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "MesloLGS Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS Nerd Font"
+style = "Regular"
+
 
 [keyboard]
 bindings = [
   { key = "B", mods = "Control", chars = "\u001BB" }, # Ctrl + B (Move backward one word)
   { key = "F", mods = "Control", chars = "\u001BF" }, # Ctrl + F (Move forward one word)
-  { key = "D", mods = "Control", chars = "\u001BD" }, # Ctrl + D (Delete the word after the cursor)
 ]
