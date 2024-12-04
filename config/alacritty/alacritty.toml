@@ -2,6 +2,10 @@
 live_config_reload = true
 import = ["~/.config/alacritty/themes/rose-pine-moon.toml"]
 
+[terminal.shell]
+args = ['-l', '-c', 'zellij -l welcome']
+
+program = "zsh"
 [window]
 padding = { x = 10, y = 10 }
 decorations = "Buttonless"
