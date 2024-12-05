@@ -9,13 +9,3 @@ vim.keymap.set("n", "<Leader>ya", "ggVGy<C-O>", { desc = "Select all" })
 -- Add new lines
 vim.keymap.set("n", "<Leader>o", "mpo<Esc>`p", { desc = "Add new line below" })
 vim.keymap.set("n", "<Leader>O", "mpO<Esc>`p", { desc = "Add new line above" })
-
--- Move lines remap
-vim.keymap.set("n", "<Leader>k", "<A-k>", { desc = "Move Up", remap = true })
-vim.keymap.set("n", "<Leader>j", "<A-j>", { desc = "Move Down", remap = true })
-
-vim.keymap.set("v", "<Leader>k", "<A-k>", { desc = "Move Up", remap = true })
-vim.keymap.set("v", "<Leader>j", "<A-j>", { desc = "Move Down", remap = true })
-
-vim.keymap.set("i", "<Leader>k", "<A-k>", { desc = "Move Up", remap = true })
-vim.keymap.set("i", "<Leader>j", "<A-j>", { desc = "Move Down", remap = true })
