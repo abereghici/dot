@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Define session name
+SESSION_NAME="tripadvisor"
+
+# Check if the session already exists
+tmux has-session -t $SESSION_NAME 2>/dev/null
+
+if [ $? != 0 ]; then
+	# Create a new session
+	tmux new-session -d -s $SESSION_NAME -n "Editor"
+	tmux send-keys -t $SESSION_NAME:1 "ssh dev" C-m
+
+	# Create second window
+	tmux new-window -t $SESSION_NAME -n "Shell"
+	tmux send-keys -t $SESSION_NAME:2 "ssh dev" C-m
+fi
+
+# Attach to the session
+tmux attach-session -t $SESSION_NAME
